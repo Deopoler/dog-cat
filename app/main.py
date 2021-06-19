@@ -8,6 +8,7 @@ ALLOWED_EXTENSIONS = {'png', 'jpg', 'jpeg'}
 
 
 def allowed_file(filename):
+    print(filename)
     return "." in filename and filename.rsplit(".")[1].lower() in ALLOWED_EXTENSIONS
 
 
